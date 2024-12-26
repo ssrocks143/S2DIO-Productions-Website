@@ -1,0 +1,265 @@
+/* BOX MODEL FIX */
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+
+
+
+
+/* HOME PAGE */
+
+.home {
+    background-color: #e7e0df;
+    text-align: center;
+    background-size: cover;
+    margin: 0;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+}
+
+.header .navimage{
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.header .navbar{
+    margin-right: 30px;
+    margin-top: 35px;
+}
+
+
+
+
+
+
+/* TITLE AND SUBTITLE HOME PAGE */
+
+.home .title{
+    color: black;
+    font-size: 100px;
+    font-family: Papyrus, Fantasy;
+    text-align: center;
+    margin-bottom: 0px;
+    font-weight: bold;
+    display:inline-block;
+    border-radius: 30%;
+    width: 70%;
+
+}
+
+.home .subtitle{
+    color: #9e303e;
+    font-family: Copperplate, Fantasy;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 0 50px 20px;
+}
+
+.home .home-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 14.5%;
+    height: 14.5%;
+    margin-bottom: -20px;
+}
+
+.title-content{
+    margin-top: 50px;
+}
+
+
+
+
+
+
+/* MAIN BUTTON CSS */
+
+.main-btn{
+    padding: 10px 20px; 
+    font-size: 40px;
+    color: white;
+    background-color: #9e303e;
+    font-family: Copperplate, Fantasy;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: 0.3s ease 0.1s;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* MAIN NAV FORMATTING */
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li{
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    text-align: left;
+    font-family: Copperplate, Fantasy;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+
+.main-menu{
+    margin-right: 10px;
+}
+
+
+
+
+
+/* BUTTON CLASS FOR MAIN NAV */
+.btn a {
+    font-size: 22px;
+    font-weight: 200;
+    color: black;
+    padding: 10px;
+    border-radius: 20%;
+    font-weight: bolder;
+    display: block;
+    text-align: center;
+    margin-top:-10px;
+}
+
+.btn a:hover {
+    color: #9e303e;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+
+
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropbtn {
+    color: black;
+    border-radius: 20%;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.dropdown .dropbtn:hover {
+    color: #9e303e;
+    font-weight: bolder;
+    text-decoration: none;
+}
+  
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #9e303e;
+    min-width: 197px;
+    z-index: 1;
+    top: 100%; /* Ensures it is right underneath the menu */
+    left: 0; 
+    border-radius: 5px;
+}
+  
+/* Dropdown links */
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    margin:0;
+    padding: 5px 5px 4px 4px;
+    margin-left: -15px;
+}
+
+.dropdown-content li:last-child{
+    margin-bottom: 15px;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    background-color: black;
+    border-radius: 20px;
+}
+
+/* Show the dropdown when hovering over the parent */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: #631e27;
+    text-align: center;
+    color: #efefef;
+    font-size: large;
+    font-family: Papyrus, Fantasy;
+    padding-top: 7px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* SOCIALS PART OF LINK */
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+.socials li {
+    display: inline-block;
+}
+.socials img {
+    width: 32px;
+
+}
+ 
+/* LINKS IN FOOTER */
+footer a {
+    color: white;
+}
+footer a:hover {
+    color: #db7782;
+    text-decoration: none;
+}
+

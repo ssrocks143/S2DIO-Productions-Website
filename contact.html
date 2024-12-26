@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+    <html lang="en-US" dir="ltr">
+    <!--THIS IS THE HEADER SECTION-->
+    <head>
+        <title> Contact Us </title>
+        <link rel="icon" type="image/x-icon" href="images/logoremovebg.png">
+        <link rel="stylesheet" href="contactStyles.css">
+        <script src="contactScipt.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body class="contact">
+         
+         <div class="content-wrapper">
+            <!--MAIN MENU NAVIGATION BAR-->
+            <div class = "header">
+                <div class ="navimage">
+                    <a href="index.html"><img  class="the-image" src="images/logoremovebg.png" alt="Upper Logo" width="75", height="77"></a>
+                </div>
+                <div class = "main-menu">
+                    <nav role="navigation" aria-label="main menu">
+                        <ul class = "navbar">
+                        <li class="btn"><a href = "about.html">ABOUT</a></li>
+                        <li class="dropdown">
+                            <a href="" class="dropbtn">PORTFOLIO</a>
+                            <ul class="dropdown-content">
+                                <li><a href="portraits.html">Portraits/Photoshoots</a></li>
+                                <li><a href="#">Event Photography</a></li>
+                                <li><a href="sports.html">Sports</a></li>
+                            </ul>
+                        </li>
+                        <li class="btn"><a href = "">BOOK NOW</a></li>
+                        <li class="btn"><a href = "contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!--TITLE-->
+            <h1 class="title">Contact Us</h1>
+            <div class="contact-flex">
+                <div class="contact-form" action="send_email.php" method="POST">
+                    <form>
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="theFullName" placeholder="Enter your name here:" required>
+                        <br>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="emailAddress" placeholder="Enter your email here:" required>
+                        <br>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="What can I help you with?" required></textarea>
+                        <br>
+                        <input type="submit" class="submitButton" value="Submit">
+                    </form>
+                </div>
+                <div class="contact-photo">
+                    <img src="images/santorini.jpg" alt="towerImage">
+                </div>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <footer>
+            <p class = "social-text">
+             &#64;2024 S2DIO Productions | <a href="mailto:s2dioproductionsclt@gmail.com" target="_blank"> s2dioproductions@gmail.com</a>
+            </p>
+            <ul class="socials">
+                <div class="socials-icon">
+                    <li><a href="https://www.instagram.com/s2dioproductions/" target="_blank"><image src="images/ig.png" alt="Instagram Icon"></a></li>
+                    <li><a href="mailto:s2dioproductions@gmail.com" target="_blank"><image src="images/gmail.webp" alt="Gmail Icon"></image></a></li>
+                    <li><a href="https://www.linkedin.com/company/S2DIO-Productions/" target="_blank"><image src="images/linkedin.png" alt="LinkedIn Icon"></image></a></li>
+                </div>    
+            </ul>
+        </footer>
+
+
+    </body>
+
+</html>
